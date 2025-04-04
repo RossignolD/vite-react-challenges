@@ -1,14 +1,16 @@
 // src/App.jsx
 import React from 'react';
-import './BlogPostItem.css'; 
+import styles from './BlogPostItem.module.css'; 
+import { Link } from "react-router";
 
-function BlogPostItem() {
+
+function BlogPostItem({title, summary, date, url}) {
   return (
-    <div className="styles.blogPostItem">
+    <div className={styles.blogPostItem}>
       <Link to={url} className={styles.title}><h2>{title}</h2> </Link>
       <p className={styles.summary}>{summary}</p>
 
-      <p className={styles.date}>Published on {formattedDate}</p>
+      <p className={styles.date}>Published on {date}</p>
     </div>
   );
 }

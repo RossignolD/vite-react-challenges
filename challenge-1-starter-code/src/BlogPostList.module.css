@@ -1,0 +1,32 @@
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 20px;
+    font-family: Arial;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border: 1px #DDDDDD;
+    color: #333;
+}
+
+@media (min-width: 769px){
+    .container{
+        min-width: 300px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container{
+        min-width: 300px;
+        max-width:fit-content;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        gap: 20px;
+    }
+}
