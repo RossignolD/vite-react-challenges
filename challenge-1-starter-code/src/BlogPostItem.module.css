@@ -1,0 +1,38 @@
+.title{
+    font-size: 20px;
+    color: #333333;
+    text-decoration: none;
+}
+.summary{
+    font-size: 14px;
+}
+
+.date{
+    font-size: 12px;
+}
+
+.title:hover{
+    color: #007BFF;
+}
+
+@media(min-width: 769px){
+    .title{
+        font-size: 24px;
+        font-weight: 700;
+        color: #333333;
+        
+    }
+
+    .summary{
+        font-size: 16px;;
+        font-style: normal;
+        color: #666666;
+    }
+
+    .date{
+        font-size: 14px;
+        font-style: normal;
+        color: #999999
+    }
+}
+
