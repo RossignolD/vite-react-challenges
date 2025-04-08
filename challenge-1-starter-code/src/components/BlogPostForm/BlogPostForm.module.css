@@ -78,8 +78,19 @@ button {
     justify-content: space-between;
     width: 100%;
   }
+
+  .label {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #333333;
+  }
   .input {
     max-width: 80%;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #333333;
   }
   .textarea {
     min-width: 80%;
