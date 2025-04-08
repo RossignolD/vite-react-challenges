@@ -10,7 +10,6 @@ function BlogPostList({ posts }) {
   } else {
     return (
       <div className={styles.container}>
-        <BlogPostForm></BlogPostForm>
         {posts.map((post) => (
           <BlogPostItem
             key={post.id}
