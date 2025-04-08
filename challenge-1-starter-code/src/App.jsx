@@ -1,7 +1,8 @@
 // src/App.jsx
 import React from "react";
+import "./reset.css";
 import "./App.css";
-import BlogPostList from "./BlogPostList";
+import BlogPostList from "./components/BlogPostList/BlogPostList.jsx";
 
 const samplePosts = [
   {
