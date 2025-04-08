@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import "../../reset.css";
 import styles from "./BlogPostForm.module.css";
+console.log(styles);
 
 const BlogPostForm = ({ post, onSubmit }) => {
   const [title, setTitle] = useState(post?.title || "");
@@ -26,9 +28,12 @@ const BlogPostForm = ({ post, onSubmit }) => {
   return (
     <form className={styles.blogPostForm} onSubmit={handleSubmit}>
       <div className={styles.formGroup}>
-        <label htmlFor="title">Title</label>
+        <label className={styles.label} htmlFor="title">
+          Title
+        </label>
 
         <input
+          className={styles.input}
           id="title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
@@ -38,9 +43,12 @@ const BlogPostForm = ({ post, onSubmit }) => {
       </div>
 
       <div className={styles.formGroup}>
-        <label htmlFor="content">Content</label>
+        <label className={styles.label} htmlFor="content">
+          Content
+        </label>
 
         <textarea
+          className={styles.textarea}
           id="content"
           value={content}
           onChange={(e) => setContent(e.target.value)}
@@ -50,9 +58,12 @@ const BlogPostForm = ({ post, onSubmit }) => {
       </div>
 
       <div className={styles.formGroup}>
-        <label htmlFor="author">Author</label>
+        <label className={styles.label} htmlFor="author">
+          Author
+        </label>
 
         <input
+          className={styles.input}
           id="author"
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
@@ -62,9 +73,12 @@ const BlogPostForm = ({ post, onSubmit }) => {
       </div>
 
       <div className={styles.formGroup}>
-        <label htmlFor="date">Date</label>
+        <label className={styles.label} htmlFor="date">
+          Date
+        </label>
 
         <input
+          className={styles.input}
           id="date"
           value={date}
           onChange={(e) => setDate(e.target.value)}

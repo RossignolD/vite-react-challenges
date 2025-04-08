@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import "../../reset.css";
 import styles from "./BlogPostDetail.module.css";
 
 const BlogPostDetail = ({ title, content, author, date }) => {

@@ -17,26 +17,64 @@ label {
   font-weight: 400;
 }
 
-input {
+.input {
   font-size: 14px;
   color: #333333;
   font-style: normal;
   font-weight: 400;
   margin-top: 5px;
+  border: 1px #cccccc solid;
+  border-radius: 4px;
+  width: 100%;
 }
 
-input:focus {
+.input:focus {
   outline: 2px solid #007bff;
 }
 
-textarea {
+.textarea {
   font-size: 14px;
   color: #333333;
   font-style: normal;
   font-weight: 400;
   margin-top: 5px;
+  border: 1px #cccccc solid;
+  border-radius: 4px;
 }
 
 textarea:focus {
   outline: 2px solid #007bff;
+}
+
+.error {
+  font-size: 12px;
+  font-style: normal;
+  color: #ff0000;
+}
+
+button {
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 4px;
+}
+
+@media (min-width: 769px) {
+  .blogPostForm {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .formGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .input {
+    max-width: 80%;
+  }
+  .textarea {
+    min-width: 80%;
+  }
 }
