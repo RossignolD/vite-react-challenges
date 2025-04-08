@@ -3,6 +3,7 @@ import React from "react";
 import "./reset.css";
 import "./App.css";
 import BlogPostList from "./components/BlogPostList/BlogPostList.jsx";
+import BlogPostForm from "./components/BlogPostForm/BlogPostForm.jsx";
 
 const samplePosts = [
   {
@@ -35,6 +36,8 @@ function App() {
     <div className="container">
       <h1 className="title">Hello World!</h1>
       <BlogPostList posts={samplePosts} />
+
+      <BlogPostForm></BlogPostForm>
     </div>
   );
 }
