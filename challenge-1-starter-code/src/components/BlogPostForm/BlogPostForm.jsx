@@ -28,62 +28,68 @@ const BlogPostForm = ({ post, onSubmit }) => {
   return (
     <form className={styles.blogPostForm} onSubmit={handleSubmit}>
       <div className={styles.formGroup}>
-        <label className={styles.label} htmlFor="title">
-          Title
-        </label>
+        <div className={styles.inputRow}>
+          <label className={styles.label} htmlFor="title">
+            Title
+          </label>
 
-        <input
-          className={styles.input}
-          id="title"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
+          <input
+            className={styles.input}
+            id="title"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          />
+        </div>
 
         {errors.title && <p className={styles.error}>{errors.title}</p>}
       </div>
 
       <div className={styles.formGroup}>
-        <label className={styles.label} htmlFor="content">
-          Content
-        </label>
-
-        <textarea
-          className={styles.textarea}
-          id="content"
-          value={content}
-          onChange={(e) => setContent(e.target.value)}
-        />
+        <div className={styles.inputRow}>
+          <label className={styles.label} htmlFor="content">
+            Content
+          </label>
+          <textarea
+            className={styles.textarea}
+            id="content"
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
+          />
+        </div>
 
         {errors.content && <p className={styles.error}>{errors.content}</p>}
       </div>
 
       <div className={styles.formGroup}>
-        <label className={styles.label} htmlFor="author">
-          Author
-        </label>
+        <div className={styles.inputRow}>
+          <label className={styles.label} htmlFor="author">
+            Author
+          </label>
 
-        <input
-          className={styles.input}
-          id="author"
-          value={author}
-          onChange={(e) => setAuthor(e.target.value)}
-        />
+          <input
+            className={styles.input}
+            id="author"
+            value={author}
+            onChange={(e) => setAuthor(e.target.value)}
+          />
+        </div>
 
         {errors.author && <p className={styles.error}>{errors.author}</p>}
       </div>
 
       <div className={styles.formGroup}>
-        <label className={styles.label} htmlFor="date">
-          Date
-        </label>
+        <div className={styles.inputRow}>
+          <label className={styles.label} htmlFor="date">
+            Date
+          </label>
 
-        <input
-          className={styles.input}
-          id="date"
-          value={date}
-          onChange={(e) => setDate(e.target.value)}
-        />
-
+          <input
+            className={styles.input}
+            id="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+          />
+        </div>
         {errors.date && <p className={styles.error}>{errors.date}</p>}
       </div>
 
