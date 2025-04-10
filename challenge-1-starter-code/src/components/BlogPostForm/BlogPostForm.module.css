@@ -60,6 +60,7 @@ button {
   background-color: #007bff;
   border: 1px #cccccc solid;
   border-radius: 4px;
+  align-self: flex-end;
 }
 
 @media (min-width: 769px) {
@@ -72,11 +73,18 @@ button {
     margin-right: auto;
   }
 
-  .formGroup {
+  .inputRow {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     width: 100%;
+    align-items: start;
+  }
+
+  .formGroup {
+    width: 100%;
+    align-items: start;
+    margin-bottom: 15px;
+    margin-top: 15px;
   }
 
   .label {
@@ -84,7 +92,9 @@ button {
     font-weight: 400;
     font-style: normal;
     color: #333333;
+    margin-right: 10px;
   }
+
   .input {
     max-width: 80%;
     font-size: 16px;
@@ -94,5 +104,10 @@ button {
   }
   .textarea {
     min-width: 80%;
+  }
+
+  .button {
+    margin-top: 20px;
+    align-self: right;
   }
 }
