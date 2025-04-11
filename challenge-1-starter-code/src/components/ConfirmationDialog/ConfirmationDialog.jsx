@@ -26,10 +26,16 @@ const ConfirmationDialog = ({ isOpen, onClose, onConfirm }) => {
         </p>
         <div className={styles.buttons}>
           {" "}
-          <button onClick={onClose}>Cancel</button>
-          <button onClick={onConfirm}>Delete</button>
+          <button onClick={onClose} className={styles.cancelButton}>
+            Cancel
+          </button>
+          <button onClick={onConfirm} className={styles.deleteButton}>
+            Delete
+          </button>
         </div>
       </div>
     </div>
   );
 };
+
+export default ConfirmationDialog;
