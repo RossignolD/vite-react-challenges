@@ -1,0 +1,15 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #003366;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

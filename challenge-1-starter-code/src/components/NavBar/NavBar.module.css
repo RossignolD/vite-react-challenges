@@ -2,13 +2,14 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #003366;
 }
 
 .logo {
   align-items: flex-start;
   color: white;
   margin: 10px;
+  font-weight: 600;
 }
 
 .links {

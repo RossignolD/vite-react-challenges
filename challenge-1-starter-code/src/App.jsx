@@ -4,7 +4,7 @@ import "./reset.css";
 import "./App.css";
 import BlogPostList from "./components/BlogPostList/BlogPostList.jsx";
 import BlogPostForm from "./components/BlogPostForm/BlogPostForm.jsx";
-import NavBar from "./components/NavBar/NavBar.jsx";
+import Layout from "./components/Layout/Layout.jsx";
 
 const samplePosts = [
   {
@@ -34,13 +34,13 @@ const samplePosts = [
 
 function App() {
   return (
-    <div className="container">
-      <h1 className="title">Hello World!</h1>
-      <NavBar></NavBar>
-      <BlogPostList posts={samplePosts} />
-
-      <BlogPostForm></BlogPostForm>
-    </div>
+    <Layout>
+      <div className="container">
+        <h1 className="title">Hello World!</h1>
+        <BlogPostList posts={samplePosts} />
+        <BlogPostForm></BlogPostForm>
+      </div>
+    </Layout>
   );
 }
 
