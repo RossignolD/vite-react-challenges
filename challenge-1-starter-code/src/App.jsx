@@ -4,6 +4,7 @@ import "./reset.css";
 import "./App.css";
 import BlogPostList from "./components/BlogPostList/BlogPostList.jsx";
 import BlogPostForm from "./components/BlogPostForm/BlogPostForm.jsx";
+import NavBar from "./components/NavBar/NavBar.jsx";
 
 const samplePosts = [
   {
@@ -35,6 +36,7 @@ function App() {
   return (
     <div className="container">
       <h1 className="title">Hello World!</h1>
+      <NavBar></NavBar>
       <BlogPostList posts={samplePosts} />
 
       <BlogPostForm></BlogPostForm>

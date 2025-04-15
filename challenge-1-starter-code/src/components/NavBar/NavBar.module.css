@@ -1,0 +1,65 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #007bff;
+}
+
+.logo {
+  align-items: flex-start;
+  color: white;
+  margin: 10px;
+}
+
+.links {
+  display: none;
+}
+
+.hamburger {
+  color: white;
+  margin: 10px;
+}
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+  animation: myAnimation 0.3s ease-in;
+  width: 100%;
+}
+
+.mobileMenu a {
+  color: black;
+}
+
+@keyframes myAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .links {
+    display: flex;
+    align-self: flex-end;
+    gap: 20px;
+    margin: 10px;
+  }
+
+  .links a {
+    color: white;
+  }
+
+  .links a:visited {
+    color: white;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
