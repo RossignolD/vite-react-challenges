@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from "react";
+import "../../reset.css";
 import styles from "./ConfirmationDialog.module.css";
 
 const ConfirmationDialog = ({ isOpen, onClose, onConfirm }) => {
+  console.log("hello");
   const dialogRef = useRef(null);
   useEffect(() => {
     if (isOpen == true) {
@@ -20,8 +22,8 @@ const ConfirmationDialog = ({ isOpen, onClose, onConfirm }) => {
         tabIndex={-1}
         onClick={(e) => e.stopPropagation()}
       >
-        <h2 id="dialog-title">Confirm Deletion</h2>
-        <p id="dialog-description">
+        <h2 className={styles.dialogTitle}>Confirm Deletion</h2>
+        <p className={styles.dialogDescription}>
           Are you sure you want to delete this post?
         </p>
         <div className={styles.buttons}>

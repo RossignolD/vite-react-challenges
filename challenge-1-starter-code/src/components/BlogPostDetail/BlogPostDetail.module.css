@@ -1,7 +1,4 @@
 .blogPostDetail {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px;
   background-color: #ffffff;
   border-radius: 8px;
@@ -36,11 +33,35 @@
 }
 
 .content {
+  text-align: left;
+}
+
+.content p {
   font-size: 14px;
   color: #333333;
   font-style: normal;
   font-weight: 400;
-  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+.content h2 {
+  font-size: 16px;
+  color: #333333;
+  font-style: normal;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+.content ul,
+.content ol {
+  display: list-item;
+  list-style-type: disc;
+  font-size: 14px;
+  color: #333333;
+  font-style: normal;
+  font-weight: 400;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
 }

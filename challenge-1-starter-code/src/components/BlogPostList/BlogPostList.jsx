@@ -19,7 +19,6 @@ function BlogPostList({ posts }) {
             date={post.date}
             url={post.url}
           />
-          // <p>Is it working?</p>
         ))}
       </div>
     );
