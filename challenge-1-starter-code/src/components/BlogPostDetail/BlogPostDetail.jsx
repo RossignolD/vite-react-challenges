@@ -4,6 +4,30 @@ import DeleteButton from "../DeleteButton/DeleteButton.jsx";
 import ConfirmationDialog from "../ConfirmationDialog/ConfirmationDialog.jsx";
 import { useParams } from "react-router";
 import styles from "./BlogPostDetail.module.css";
+import CommentList from "../CommentList/CommentList.jsx";
+
+const sampleComments = [
+  {
+    author: "Charlie D.",
+    date: "2022-08-09T13:47",
+    text: "Great post!",
+    avatar: "https://picsum.photos/id/1/200",
+  },
+
+  {
+    author: "Bob C.",
+    date: "2020-11-30T08:15",
+    text: "Love the new blog layout; keep up the good work",
+    avatar: "https://picsum.photos/id/18/200",
+  },
+
+  {
+    author: "Alice B.",
+    date: "2019-05-23T16:28",
+    text: "First comment!",
+    avatar: "https://picsum.photos/id/40/200",
+  },
+];
 
 function BlogPostDetail({ posts }) {
   const { id } = useParams();
@@ -49,6 +73,7 @@ function BlogPostDetail({ posts }) {
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
       <DeleteButton onClick={handleDeleteClick}></DeleteButton>
+      <CommentList comments={sampleComments} />
     </div>
   );
 }

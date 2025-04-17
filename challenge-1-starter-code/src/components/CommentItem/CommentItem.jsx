@@ -15,11 +15,21 @@ const CommentItem = ({ name, date, text, avatar }) => {
   return (
     <div>
       <div className={styles.commentItem}>
-        <h3 className={styles.name}>{name}</h3>
-        <span className={styles.formattedDate}>{formattedDate}</span>
-        <img className={styles.avatar} src={avatar} alt={`Avatar of ${name}`} />
-        <p className={styles.text}>{text}</p>
+        <img
+          className={styles.avatar}
+          src={avatar}
+          alt={`Avatar of ${name}`}
+        ></img>
+        <div className={styles.commentContents}>
+          <div className={styles.commentInfo}>
+            <h3 className={styles.name}>{name}</h3>
+            <p className={styles.formattedDate}>{formattedDate}</p>
+          </div>
+          <p className={styles.text}>{text}</p>
+        </div>
       </div>
     </div>
   );
 };
+
+export default CommentItem;

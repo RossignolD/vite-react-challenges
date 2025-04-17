@@ -3,6 +3,7 @@
   background-color: #ffffff;
   border-radius: 8px;
   border-color: #999999;
+  width: 100%;
 }
 
 .title {
@@ -68,7 +69,6 @@
 
 @media (min-width: 769px) {
   .blogPostDetail {
-    max-width: 800px;
     padding: 40px;
   }
 

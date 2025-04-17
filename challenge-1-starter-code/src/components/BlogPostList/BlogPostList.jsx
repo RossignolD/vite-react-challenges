@@ -1,6 +1,5 @@
 import React from "react";
 import BlogPostItem from "../BlogPostItem/BlogPostItem.jsx";
-import BlogPostForm from "../BlogPostForm/BlogPostForm.jsx";
 import "../../reset.css";
 import styles from "./BlogPostList.module.css";
 

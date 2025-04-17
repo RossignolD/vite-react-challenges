@@ -99,8 +99,6 @@ function App() {
             element={<BlogPostDetail posts={initialPosts} />}
           ></Route>
         </Routes>
-        {/* <h1 className="title">Hello World!</h1>
-        <BlogPostList posts={samplePosts} /> */}
       </div>
     </Layout>
   );
